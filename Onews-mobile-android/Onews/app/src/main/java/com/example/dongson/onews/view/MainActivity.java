@@ -24,7 +24,10 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import com.example.dongson.onews.Adapters.SectionsPagerAdapter;
+=======
+>>>>>>> edit fragment main and icon in menu
 import com.example.dongson.onews.Models.Tab;
 import com.example.dongson.onews.R;
 
@@ -59,7 +62,11 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+<<<<<<< HEAD
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(), listTab);
+=======
+        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+>>>>>>> edit fragment main and icon in menu
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
@@ -109,12 +116,22 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_contact) {
 
+<<<<<<< HEAD
 
         } else if (id == R.id.nav_edit) {
 
         } else if (id == R.id.nav_logout) {
 
         } else if (id == R.id.nav_seting) {
+=======
+        } else if (id == R.id.nav_edit) {
+
+        } else if (id == R.id.nav_logout) {
+
+        } else if (id == R.id.nav_seting) {
+
+        } else if (id == R.id.nav_info) {
+>>>>>>> edit fragment main and icon in menu
 
         } else if (id == R.id.nav_info) {
             Intent infoApp = new Intent(getApplicationContext(), InfoAppActivity.class);
@@ -126,7 +143,33 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+<<<<<<< HEAD
 
+=======
+
+    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+
+        public SectionsPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return MainFragment.newInstance();
+        }
+
+        @Override
+        public int getCount() {
+            return listTab.size();
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return listTab.get(position).getTab_name();
+
+        }
+    }
+>>>>>>> edit fragment main and icon in menu
 
 
 //    private void setupViewPager(ViewPager viewPager) {
