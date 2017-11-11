@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.dongson.onews.view.InforUserActivity">
+    tools:context="com.example.dongson.onews.view.InfoUserActivity">
 
     <ImageView
         android:id="@+id/img_logo"
