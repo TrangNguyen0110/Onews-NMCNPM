@@ -21,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         bt_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),RegisterActivity.class);
+                Intent i = new Intent(getApplicationContext(),ArticleContentActivity.class);
                 startActivity(i);
             }
         });

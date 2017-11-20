@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_seting) {
 
         } else if (id == R.id.nav_info) {
-            Intent infoApp = new Intent(getApplicationContext(), InfoAppActivity.class);
+            Intent infoApp = new Intent(getApplicationContext(), ArticleContentActivity.class);
             startActivity(infoApp);
             overridePendingTransition(0, 0);
         }
