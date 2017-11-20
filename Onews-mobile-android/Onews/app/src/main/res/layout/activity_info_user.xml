@@ -3,16 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.example.dongson.onews.view.InfoUserActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    </android.support.v7.widget.Toolbar>
 
     <ImageView
         android:id="@+id/img_logo"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/onew" />
+        android:src="@drawable/onew"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,12 +53,12 @@
             android:textSize="15dp" />
 
         <TextView
-            android:id="@+id/tv_nameuser"
+            android:id="@+id/tv_nameuser_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_weight="40"
-            android:text="Nguyen Bao Anh"
+            android:text="Nguyen Dong Son"
             android:textSize="15dp" />
     </LinearLayout>
 
@@ -65,12 +77,12 @@
             android:text="Email Address" />
 
         <TextView
-            android:id="@+id/tv_email"
+            android:id="@+id/tv_email_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_weight="40"
-            android:text="AnhNB@gmail.com"
+            android:text="choicehip95@gmail.com"
             android:textSize="15dp" />
     </LinearLayout>
 
@@ -90,7 +102,7 @@
             android:textSize="15dp" />
 
         <TextView
-            android:id="@+id/tv_date"
+            android:id="@+id/tv_createdtime_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

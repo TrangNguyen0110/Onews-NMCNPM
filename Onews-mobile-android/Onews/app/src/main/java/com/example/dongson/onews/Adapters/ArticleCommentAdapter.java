@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.dongson.onews.Models.Comments;
-import com.example.dongson.onews.Models.OnItemClickListener;
 import com.example.dongson.onews.R;
 
 import java.util.List;
