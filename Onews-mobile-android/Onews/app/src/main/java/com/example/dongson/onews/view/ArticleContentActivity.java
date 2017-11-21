@@ -12,6 +12,7 @@ import com.example.dongson.onews.Adapters.ArticleCommentAdapter;
 import com.example.dongson.onews.Adapters.ArticleTwoAdapter;
 import com.example.dongson.onews.Models.Articles;
 import com.example.dongson.onews.Models.CreateData;
+import com.example.dongson.onews.Models.OnItemClickListener;
 import com.example.dongson.onews.R;
 
 public class ArticleContentActivity extends AppCompatActivity {
